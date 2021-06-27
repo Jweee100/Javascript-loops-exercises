@@ -4,6 +4,7 @@
 // Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 namen zou bevatten!
 // ==========================================
 
+console.log("======== opdracht 1 ===========")
 const names = ["Henk", "Piet", "Fred", "Joop"];
 
 // Verwachtte uitkomsten:
@@ -12,6 +13,11 @@ const names = ["Henk", "Piet", "Fred", "Joop"];
 // Na jouw script zie je de aangepaste waardes:
 // console.log(names) geeft: ["Henkje", "Pietje", "Fredje", "Joopje"]
 
+console.log("Origineel = ", names)
+for (let i = 0; i < names.length; i++){
+    names[i] = names[i] + "je"
+}
+console.log("Aangepast = ", names)
 
 // ==========================================
 // Opdracht 2
@@ -19,6 +25,7 @@ const names = ["Henk", "Piet", "Fred", "Joop"];
 // Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 getallen zou bevatten!
 // ==========================================
 
+console.log("======== opdracht 2 ===========")
 const numbers = [2, 4, 5, 29, 38];
 
 // Verwachtte uitkomsten:
@@ -27,6 +34,12 @@ const numbers = [2, 4, 5, 29, 38];
 // Na jouw script zie je de aangepaste waardes:
 // console.log(numbers) geeft: [ 6, 12, 15, 87, 114 ];
 
+let multiply = 3
+console.log("Origineel = ", numbers)
+for (let i = 0; i < numbers.length; i++){
+    numbers[i] = numbers[i] * multiply
+}
+console.log("Aangepast = ", numbers)
 
 // ==========================================
 // Opdracht 3
@@ -35,6 +48,7 @@ const numbers = [2, 4, 5, 29, 38];
 // Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 getallen zou bevatten!
 // ==========================================
 
+console.log("======== opdracht 3 ===========")
 const squares = [30, 2, 8, 24, 11];
 
 // Verwachtte uitkomsten:
@@ -42,3 +56,9 @@ const squares = [30, 2, 8, 24, 11];
 // console.log(numbers) geeft: [30, 2, 8, 24, 11];
 // Na jouw script zie je de aangepaste waardes:
 // console.log(numbers) geeft: [27000, 8, 512, 13824, 1331];
+
+console.log("Origineel = ", squares)
+for (let i = 0; i < squares.length; i++){
+    squares[i] = squares[i] * squares[i] * squares[i]
+}
+console.log("Aangepast = ", squares)
